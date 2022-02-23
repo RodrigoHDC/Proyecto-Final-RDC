@@ -1,0 +1,363 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#estructura {
+    width: 100%;
+    height: 600px;
+}
+
+header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.container-header {
+    width: 100%;
+    padding: 20px;
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-logo h1 {
+    margin-top: -30px;
+}
+
+
+.container-imput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-imput input {
+    width: 100%;
+}
+
+
+.container-cuenta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-principal {
+    background: lightskyblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-principal li {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.container-carrousel {
+    width: 100%;
+    padding: 40px 20px;
+    background: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items:center;
+    align-items:center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.container-carrousel img {
+    width: 150px;
+    height: 200px;
+}
+
+.container-graficos {
+    width: 100%;
+    padding: 100px 20px;
+    background: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-graficos img {
+    width: 300px;
+    height: 200px;
+}
+
+.container-nosotros {
+    padding: 40px 20px;
+}
+
+.container-nosotros button {
+    width: 100px;
+}
+
+.container-comentarios {
+    width: 100%;
+    padding: 40px 20px;
+    background: lightgrey;
+}
+
+
+.comentarios {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: justify;
+    grid-column-gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+h5{
+    margin-top: 10px;
+}
+
+.container-footer {
+    width: 100%;
+    background: lightgoldenrodyellow;
+    text-align: start;
+    padding: 20px 20px;
+}
+
+.NavBarPie li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.NavBarPie {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-items:center;
+    align-items:center;
+    justify-content: end;
+}
+
+/*------------PÁGINA PRODUCTOS------------*/
+
+.productos {
+    width: 100%;
+    padding: 20px;
+    background: lightgrey;
+}
+
+.container-productos {
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: center;
+    justify-items:stretch;
+    align-items:center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.container-productos img {
+    width: 300px;
+    height: 250px;
+}
+
+.container-productos button {
+    margin-bottom: 20px;
+}
+
+.productos li {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+
+/*------------PÁGINA OFERTAS------------*/
+
+.ofertas {
+    width: 100%;
+    padding: 20px;
+    background: lightgrey;
+}
+
+.container-ofertas {
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: center;
+    justify-items:stretch;
+    align-items:center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.container-ofertas img {
+    width: 300px;
+    height: 250px;
+}
+
+.container-ofertas button {
+    margin-bottom: 20px;
+}
+
+.ofertas li {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+
+/*------------PÁGINA NOSOTROS------------*/
+
+.container-nosotros {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.container-nosotros img {
+    width: 600px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+/*------------PÁGINA CONTACTO------------*/
+
+.container-contacto {
+    margin-top: 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+
+/*------------PÁGINA FAQ------------*/
+
+.container-faq {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+}
+
+
+
+/*------------MEDIA QUERY MOBILE------------*/
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .container-header {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+    }
+
+    .menu-principal {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .container-carrousel {
+        grid-row-gap: 10px;
+    }
+
+    .container-graficos {
+        grid-row-gap: 30px;
+    }
+
+    .comentarios {
+        grid-template-columns: auto;
+        grid-template-rows: auto;    
+    }
+
+/*------------PÁGINA PRODUCTOS------------*/
+    
+    .container-productos {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        flex-wrap: wrap;
+    }
+
+/*------------PÁGINA OFERTAS------------*/
+
+    .container-ofertas {
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        flex-wrap: wrap;
+    }
+
+/*------------PÁGINA NOSOTROS------------*/
+
+    .container-nosotros {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        text-align: justify;
+    }
+
+    .container-nosotros img {
+        width: 300px;
+        height: 150px;
+    }
+
+}
+
+
+/*------------MEDIA QUERY TABLET------------
+
+@media screen and (min-width: 768) {
+    .container-header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .menu-principal li {
+        width: 100%;
+    }
+}
+
+*/
