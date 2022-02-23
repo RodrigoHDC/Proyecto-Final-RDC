@@ -1,3 +1,5 @@
+animate__fadeIn
+
 
 * {
     padding: 0;
@@ -26,6 +28,29 @@ footer {
     grid-area: footer;
 }
 
+.titulo {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container-input {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;    
+}
+
 .container-header {
     width: 100%;
     padding: 20px;
@@ -48,13 +73,13 @@ footer {
 }
 
 
-.container-imput {
+.container-input {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-imput input {
+.container-input input {
     width: 100%;
 }
 
