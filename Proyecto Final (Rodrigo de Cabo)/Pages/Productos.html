@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Porductos</title>
 
 </head>
@@ -18,8 +19,8 @@
         <div class="container-header">
 
             <div class="container-logo">
-                <h5>Cotización Bitcoin:</h5>
-                <h5>Cotización Ethereum:</h5>
+                <h6>Cotización Bitcoin:</h6>
+                <h6>Cotización Ethereum:</h6>
                 <br><br>
 
                 <div class="titulo">
@@ -42,24 +43,36 @@
 
     </header>
     
-        <nav class="menu">
-            <ul class="menu-principal">
-				<li><a href="../index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a></li>
-				<li><a href="Ofertas.html">Ofertas</a></li>
-				<li><a href="Nosotros.html">Nosotros</a></li>
-				<li><a href="Contacto.html">Contacto</a></li>
-				<li><a href="FAQ.html">FAQ</a></li>
-			</ul>           
-        </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid justify-content-around">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link active" href="/Pages/Productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Pages/Ofertas.html">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Pages/Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Pages/Contacto.html">Contacto</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="/Pages/FAQ.html">FAQ</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
 	
 
     <section class="productos">
 
-        <aside>
             <h3>Categorías</h3>
             <br>
-            <ul>
+            <ul class="nav flex-column">
                 <li><a href="#">Equipos Armados</a></li>
                 <li><a href="#">Placas de Video</a></li>
                 <li><a href="#">Combos Minería</a></li>
@@ -68,8 +81,8 @@
                 <li><a href="#">Estructuras</a></li>
                 <li><a href="#">Varios</a></li>
             </ul>
-        </aside>
 
+            
         <div class="container-productos">
                 <article>
                     <img src="../IMG/RIG.jpg">
@@ -133,7 +146,18 @@
                 </article>
         </div>
 
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+          </ul>
+
     </section>
+
+
+    
 
     <footer>
         <div class="container-footer">
