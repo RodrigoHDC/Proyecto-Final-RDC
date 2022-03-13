@@ -1,0 +1,23 @@
+@import "tipografia";
+
+.container-logo h6 {
+    font: $tipografiaCotizaciones;
+    color: $colorCotizaciones;
+}
+
+.productos ul {
+    list-style-type: none;
+        li {
+            padding: 5px;
+            display:list-item;
+            a {
+                text-decoration:solid;
+                font: $tipografiaCategorias;
+                color: rgb(24, 43, 124);
+                    &:hover{
+                        color: rgba(6, 68, 4, 0.192);
+                    }
+            }
+        }
+}
+

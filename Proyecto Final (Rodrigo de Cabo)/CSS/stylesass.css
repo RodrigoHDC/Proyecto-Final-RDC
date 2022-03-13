@@ -1,0 +1,25 @@
+.container-logo h6 {
+  font: normal 15px/1 "Open Sans", sans-serif;
+  color: #2466ca;
+}
+
+.productos ul {
+  list-style-type: none;
+}
+
+.productos ul li {
+  padding: 5px;
+  display: list-item;
+}
+
+.productos ul li a {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font: normal 20px/1 "Open Sans", sans-serif;
+  color: #182b7c;
+}
+
+.productos ul li a:hover {
+  color: rgba(6, 68, 4, 0.192);
+}
+/*# sourceMappingURL=stylesass.css.map */
