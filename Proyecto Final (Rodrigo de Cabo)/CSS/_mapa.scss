@@ -1,0 +1,32 @@
+$color: (
+    h1: blue,
+    h2: orange,
+    h3: green,
+    h4: lightgray,
+    h5: white,
+    h6: red,
+);
+
+h1 {
+    color: map-get($color, h1)
+};
+
+h2 {
+    color: map-get($color, h2)
+};
+
+h3 {
+    color: map-get($color, h3)
+};
+
+h4 {
+    color: map-get($color, h4)
+};
+
+h5 {
+    color: map-get($color, h5)
+};
+
+h6 {
+    color: map-get($color, h6)
+};

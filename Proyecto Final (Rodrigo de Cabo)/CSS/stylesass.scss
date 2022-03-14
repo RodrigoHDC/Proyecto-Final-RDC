@@ -1,4 +1,5 @@
 @import "tipografia";
+@import "mapa";
 
 .container-logo h6 {
     font: $tipografiaCotizaciones;
@@ -21,3 +22,48 @@
         }
 }
 
+@mixin flexi ($dis, $direction, $corte, $just, $align) {
+    display:            $dis;
+    flex-flow:          $direction;
+    justify-content:    $just;
+    align-items:        $align;
+}
+
+.container-logo {
+    @include flexi (flex, column, nowrap, center, flex-start);
+}
+
+.logo {
+    @include flexi (flex, row, nowrap, flex-start, flex-start);
+}
+
+.mapa {
+    @include flexi (flex, row, nowrap, flex-start, flex-start);
+}
+
+.buttons {
+    @include flexi (flex, row, nowrap, space-evenly, flex-end);
+}
+
+
+.boton {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.boton-aceptar {
+    @extend .boton;
+    background-color: lightseagreen;
+    color: white;
+}
+
+.boton-cancelar {
+    @extend .boton;
+    background-color: lightcoral;
+    color: white;
+}
